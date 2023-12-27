@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav({cart,setCart}) {
 let handle=()=>{
-    window.location.reload();
+    window.location.reload();  //It is for, to load the window when click the cart button,.that make the cart value 0.
 }
 
   return<>

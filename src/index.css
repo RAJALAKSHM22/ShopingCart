@@ -10825,4 +10825,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
+.price{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-size: medium;
+}

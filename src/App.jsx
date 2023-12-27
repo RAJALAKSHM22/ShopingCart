@@ -4,39 +4,39 @@ import Head from './component/head'
 import Card from './component/card'
 
 function App() {
-let [cart,setCart]= useState(1);   //creating the state Var. & Fun.
+let [cart,setCart]= useState(0)  //creating the state Var. & Fun.
 
 let product=[
   {
-    Name:"veg-Meals",
+    Dish:"veg-Meals",
     Price:4
   },
   {
-    Name:"pannir-Frid Rice",
+    Dish:"pannir-Frid Rice",
     Price:6
   },
   {
-    Name:"non-veg.Meals",
+    Dish:"non-veg.Meals",
     Price:6
   },
   {
-    Name:"Noodles",
+    Dish:"Noodles",
     Price:4
   },
   {
-    Name:"Varity Rice",
+    Dish:"Varity Rice",
     Price:3
   },
   {
-    Name:"chees-Burger",
+    Dish:"chees-Burger",
     Price:4
   },
   {
-    Name:"Fesh Juice",
+    Dish:"Fesh Juice",
     Price:3
   },
   {
-    Name:"Ice-Cream",
+    Dish:"Ice-Cream",
     Price:5
   }
 ]
@@ -49,9 +49,11 @@ let product=[
        <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">      
   {/* state is given as props into the element(<card/>) call */}
           {product.map((e,i)=> {
-            return <Card cart={cart} setCart={setCart} product={e} key={i} />
-
+             return <Card cart={cart} setCart={setCart} product={e} key={i}/>
+            })
           }
+
+          
           
         </div>
     </div> 
