@@ -52,7 +52,6 @@ let product=[
             return <Card cart={cart} setCart={setCart} product={e} key={i} />
 
           }
-          )}
           
         </div>
     </div> 
