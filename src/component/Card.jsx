@@ -1,3 +1,4 @@
+
 import React,{useState} from 'react'
 // use hook to append element r component into the dom with the help of "useState"
 function Card({cart,setCart, product}) {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Nav from './component/Nav'
-import Head from './component/head'
-import Card from './component/card'
+import Head from './component/Head'
+import Card from './component/Card'
 
 function App() {
 let [cart,setCart]= useState(0)  //creating the state Var. & Fun.
@@ -51,10 +51,7 @@ let product=[
           {product.map((e,i)=> {
              return <Card cart={cart} setCart={setCart} product={e} key={i}/>
             })
-          }
-
-          
-          
+          }         
         </div>
     </div> 
   </section>       
